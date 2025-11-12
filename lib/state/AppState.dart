@@ -44,8 +44,8 @@ class AppState extends InheritedNotifier<AppStateController> {
   const AppState({
     super.key,
     required AppStateController controller,
-    required Widget child,
-  }) : super(notifier: controller, child: child);
+    required super.child,
+  }) : super(notifier: controller);
 
   static AppStateController of(BuildContext context) {
     final appState = context.dependOnInheritedWidgetOfExactType<AppState>();
