@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'page/MenuList/MenuListPage.dart';
-import 'page/TextImage/TextImagePage.dart';
-import 'page/GameConsole/GameConsolePage.dart';
+import 'page/menu_list/menu_list_page.dart';
+import 'page/text_image/text_image_page.dart';
+import 'page/game_console/game_console_page.dart';
 import 'state/AppState.dart';
+import 'page/animation/animation_page.dart';
+import 'model/animation_position.dart';
 
 void main() {
   runApp(
     AppState(
-      controller: AppStateController(initialGridColumnCount: 4),
+      controller: AppStateController(initialGridColumnCount: 4, initialAnimationPosition: AnimationPosition(top: 0, left: 0)),
       child: const MyApp(),
     ),
   );
@@ -81,5 +83,5 @@ const List<NavigationItem> navigationList = [
   NavigationItem(title: 'Home', icon: Icons.home, page: MenuListPage()),
   NavigationItem(title: 'Image', icon: Icons.message, page: TextImagePage()),
   NavigationItem(title: 'Game', icon: Icons.videogame_asset, page: GameConsolePage()),
-  NavigationItem(title: 'Others', icon: Icons.build, page: MenuListPage()),
+  NavigationItem(title: 'Animation', icon: Icons.animation, page: AnimationPage()),
 ];

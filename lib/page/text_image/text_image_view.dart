@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class TextImageWidget extends StatelessWidget {
+class TextImageView extends StatelessWidget {
   final String description;
-  const TextImageWidget({super.key, required this.description});
+  const TextImageView({super.key, required this.description});
 
   @override
   Widget build(BuildContext context) {

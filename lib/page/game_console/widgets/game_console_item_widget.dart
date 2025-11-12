@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../model/GameConsole.dart';
+import '../../../model/game_console.dart';
 
 class GameConsoleItemWidget extends StatelessWidget {
   final GameConsole gameConsole;

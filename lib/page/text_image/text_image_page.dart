@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'TextImageWidget.dart';
+import 'text_image_view.dart';
 
 class TextImagePage extends StatelessWidget {
   const TextImagePage({super.key});
@@ -16,6 +16,6 @@ The C64 continued to sell until 1993 – 13 years after its introduction – whe
 """;
   @override
   Widget build(BuildContext context) {
-    return TextImageWidget(description: description);
+    return TextImageView(description: description);
   }
 }

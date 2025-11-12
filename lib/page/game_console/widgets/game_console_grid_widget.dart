@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../model/GameConsole.dart';
-import 'GameConsoleItemWidget.dart';
+import '../../../model/game_console.dart';
+import 'game_console_item_widget.dart';
 
 
 class GameConsoleGridWidget extends StatefulWidget {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'MenuItemWidget.dart';
-import '../../model/MenuItem.dart';
+import 'menu_item_card.dart';
+import '../../../model/menu_item.dart';
 
-class MenuListItemWidget extends StatelessWidget {
+class MenuListTile extends StatelessWidget {
   final MenuItem menuItem;
-  const MenuListItemWidget({super.key, required this.menuItem});
+  const MenuListTile({super.key, required this.menuItem});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class MenuListItemWidget extends StatelessWidget {
           children: [
             Container(
               padding: EdgeInsets.all(10),
-              child: MenuItemWidget(
+              child: MenuItemCard(
                 title: menuItem.title,
                 icon: menuItem.icon,
                 msgCount: menuItem.msgCount,

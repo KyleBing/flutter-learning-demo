@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import '../../model/MenuItem.dart';
-import 'MenuListItemWidget.dart';
+import '../../model/menu_item.dart';
+import 'widgets/menu_list_tile.dart';
 
-class MenuListWidget extends StatelessWidget {
+class MenuListView extends StatelessWidget {
   final List<MenuItem> menuItems;
-  const MenuListWidget({super.key, required this.menuItems});
+  const MenuListView({super.key, required this.menuItems});
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: menuItems.length,
       itemBuilder: (context, index) { 
-        return MenuListItemWidget(
+        return MenuListTile(
           menuItem: menuItems[index],
         );
       },

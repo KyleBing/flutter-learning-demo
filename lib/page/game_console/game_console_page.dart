@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../model/GameConsole.dart';
-import 'GameConsoleGridWidget.dart';
+import '../../model/game_console.dart';
 import '../../state/AppState.dart';
+import 'widgets/game_console_grid_widget.dart';
 
 class GameConsolePage extends StatelessWidget {
   const GameConsolePage({super.key});
@@ -28,11 +28,11 @@ class GameConsolePage extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                  onPressed: appState.decrementGridColumnCount,
+                  onPressed: appState.incrementGridColumnCount,
                   icon: const Icon(Icons.remove),
                 ),
                 IconButton(
-                  onPressed: appState.incrementGridColumnCount,
+                  onPressed: appState.decrementGridColumnCount,
                   icon: const Icon(Icons.add),
                 ),
               ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../model/MenuItem.dart';
-import 'MenuListWidget.dart';
+import '../../model/menu_item.dart';
+import 'menu_list_view.dart';
 
 
 const List<MenuItem> menuList = [
@@ -15,6 +15,6 @@ class MenuListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MenuListWidget(menuItems: menuList, );
+    return MenuListView(menuItems: menuList);
   }
 }
